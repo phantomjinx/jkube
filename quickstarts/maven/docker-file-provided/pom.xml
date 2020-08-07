@@ -153,6 +153,14 @@
                                         <contextDir>${project.basedir}/src/main/assembly-dockerfile</contextDir>
                                         <assembly>
                                             <name>target</name>
+                                            <inline>
+                                              <files>
+                                                <file>
+                                                  <source>${project.basedir}/README.md</source>
+                                                  <outputDirectory>readme</outputDirectory>
+                                                </file>
+                                              </files>
+                                           </inline>
                                         </assembly>
                                     </build>
                                 </image>
